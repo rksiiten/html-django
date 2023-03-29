@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Vaccines</a></li>
+    <li><a href="{% url 'survey' %}">Survey</a></li>
+    <li><a href="{% url 'us' %}">About Us</a></li>
+  </ul>
+</div>
+
+{% endblock nav %}
+  
+{% block content %}
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://covid19.who.int/region/wpro/country/ph" data-sf-ec-immutable="">STATISTICS</a></p>
+    </div>
+
+    <div class="col-sm-8 text-left"> 
+      <h1><strong>COVID VACCINE</strong></h1>
+      <hr>
+      <div><p style="font-size:18px;"><strong><em></em></strong><span style="background-color:transparent;text-align:inherit;text-transform:inherit;white-space:inherit;word-spacing:normal;caret-color:auto;">Equitable access to safe and effective vaccines is critical to ending the COVID-19 pandemic, so it is hugely encouraging to see so many vaccines proving and going into development. WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines.&nbsp;</span></p></div>
+      <div><p style="font-size:18px;">Safe and effective vaccines are a game-changing tool: but for the foreseeable future we must continue wearing masks, cleaning our hands, ensuring good ventilation indoors, physically distancing and avoiding crowds.&nbsp;</p></div>
+      <div><p style="font-size:18px;">Being vaccinated does not mean that we can throw caution to the wind and put ourselves and others at risk, particularly because research is still ongoing into how much vaccines protect not only against disease but also against infection and transmission.</p></div>
+      <div><p style="font-size:18px;">See WHO’s landscape of COVID-19 vaccine candidates for the latest information on vaccines in clinical and pre-clinical development, generally updated twice a week. WHO’s COVID-19 dashboard, updated daily, also features the number of vaccine doses administered globally.</p></div>
+      <div><p style="font-size:18px;">But it’s not vaccines that will stop the pandemic, it’s vaccination. We must ensure fair and equitable access to vaccines, and ensure every country receives them and can roll them out to protect their people, starting with the most vulnerable.</p></div>
+      <br>
+      <div class="container">    
+        <img src="https://www.houstonmethodist.org/-/media/Images/Contenthub/Article-Images/COVID-Vaccine/Hub_COVIDVaccineMissedDose_Article.ashx" 
+        class="img-rounded" width="1000" height="500"> 
+      </div>
+    </div>
+
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p style="color:red">GET YOUR COVID-19 VACCINE NOW</p>
+      </div>
+      <div class="well">
+        <p>
+          Advertisement <br>
+          GET VACCINATED!!
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}

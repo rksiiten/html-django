@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About Vaccines</a></li>
+    <li class="active"><a href="{% url 'survey' %}">Survey</a></li>
+    <li><a href="{% url 'us' %}">About Us</a></li>
+  </ul>
+</div>
+
+{% endblock nav %}
+
+{% block content %}
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <a href="https://covid19.who.int/region/wpro/country/ph" data-sf-ec-immutable="">STATISTICS</a></p>
+      <p><a href="{% url 'list' %}">SHOW LIST</a></p>
+    </div>  
+
+    <div class="col-sm-8 text-left"> 
+      <h1>Which brand do you prefer?</h1>
+      <p></p>
+      <hr>
+            
+      {% block surv %}
+
+      {% endblock surv %}
+
+    </div>
+
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p style="color:red">GET YOUR COVID-19 VACCINE NOW</p>
+      </div>
+      <div class="well">
+        <p>Advertisement <br> GET VACCINATED!!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

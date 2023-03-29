@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+
+<div class="collapse navbar-collapse" id="myNavbar">
+  <ul class="nav navbar-nav">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li class="active"><a href="{% url 'about' %}">About Vaccines</a></li>
+    <li><a href="{% url 'survey' %}">Survey</a></li>
+    <li><a href="{% url 'us' %}">About Us</a></li>
+  </ul>
+
+</div>
+
+{% endblock nav %}
+
+
+{% block content %}
+
+    <div class="container-fluid text-center">    
+      <div class="row content">
+        <div class="col-sm-2 sidenav">
+          <p><a href="https://covid19.who.int/region/wpro/country/ph" data-sf-ec-immutable="">STATISTICS</a></p>
+        </div>
+
+        
+        <div class="col-sm-8 text-left"> 
+          <h1>About COVID Vaccines</h1>
+          
+          <hr>
+          <h3><strong>Pfizer-BioNTech</strong></h3>
+          <div class="row "><div class="col-md-6"><p><strong>Name:&nbsp;</strong>BNT162b2</p>
+            <p><strong>Manufacturer:</strong>&nbsp;Pfizer, Inc., and BioNTech</p>
+            <p><strong>Type of Vaccine:</strong>&nbsp;mRNA</p>
+            </div><div class="col-md-6"><p><strong>Number of Shots:</strong>&nbsp;2 shots, 21 days apart</p>
+            <p><strong>Age to get vaccinated:&nbsp;</strong>People 12 years and older<br>
+            <p><strong>Does NOT Contain:&nbsp;</strong>Eggs, preservatives, latex<br>
+            </div></div>
+          <br>
+          <h4><strong>Possible Side Effects</strong></h4>
+          <div class="row "><div class="col-md-6"><p>In the arm where you got the shot:</p>
+            <ul>
+            <li>Pain</li>
+            <li>Redness</li>
+            <li>Swelling</li>
+            </ul>
+            </div><div class="col-md-6"><p>Throughout the rest of your body:</p>
+            <ul>
+            <li>Tiredness</li>
+            <li>Headache</li>
+            <li>Muscle pain</li>
+            <li>Chills</li>
+            <li>Fever</li>
+            <li>Nausea</li>
+            </ul>
+            </div></div>
+
+          <hr><hr>
+          <h3><strong>Moderna</strong></h3>
+          <div class="row "><div class="col-md-6"><p><strong>Name: </strong>mRNA-1273</p>
+            <p><strong>Manufacturer:</strong> ModernaTX, Inc.</p>
+            <p><strong>Type of Vaccine:</strong> mRNA</a></p>
+            <p><strong>Number of Shots:</strong> 2 shots, one month (28 days) apart</p>
+            </div><div class="col-md-6"><p><strong>How Given:</strong> Shot in the muscle of the upper arm</p>
+              <p><strong>Age to get vaccinated:&nbsp;</strong>People 18 years and older<br>
+              <p><strong>Does NOT Contain: </strong>Eggs, preservatives, latex<br>
+            </div></div>
+            <br>
+            <h4><strong>Possible Side Effects</strong></h4>
+            <div class="row "><div class="col-md-6"><p>In the arm where you got the shot:</p>
+              <ul>
+              <li>Pain</li>
+              <li>Redness</li>
+              <li>Swelling</li>
+              </ul>
+              </div><div class="col-md-6"><p>Throughout the rest of your body:</p>
+              <ul>
+              <li>Tiredness</li>
+              <li>Headache</li>
+              <li>Muscle pain</li>
+              <li>Chills</li>
+              <li>Fever</li>
+              <li>Nausea</li>
+              </ul>
+              </div></div>
+            
+
+            <hr><hr>
+            <h3><strong>Johnson & Johnson’s Janssen</strong></h3>
+            <div class="row "><div class="col-md-6"><p><strong>Name: </strong>JNJ-78436735</p>
+              <p><strong>Manufacturer:</strong> Janssen Pharmaceuticals Companies of Johnson &amp; Johnson</p>
+              <p><strong>Type of Vaccine:</strong> Viral Vector</p>
+              <p><strong>Number of Shots:</strong> 1 shot</p>
+              </div><div class="col-md-6"><p><strong>How Given:</strong> Shot in the muscle of the upper arm</p>
+              <p><strong>Age to get vaccinated:&nbsp;</strong>People 18 years and older<br>              
+              <p><strong>Does NOT Contain: </strong>Eggs, preservatives, latex<br>
+              </div></div>
+              <br>
+              <h4><strong>Possible Side Effects</strong></h4>
+              <div class="row "><div class="col-md-6"><p>In the arm where you got the shot:</p>
+                <ul>
+                <li>Pain</li>
+                <li>Redness</li>
+                <li>Swelling</li>
+                </ul>
+                </div><div class="col-md-6"><p>Throughout the rest of your body:</p>
+                <ul>
+                <li>Tiredness</li>
+                <li>Headache</li>
+                <li>Muscle pain</li>
+                <li>Chills</li>
+                <li>Fever</li>
+                <li>Nausea</li>
+                </ul>
+                </div></div>
+        </div>
+        <div class="col-sm-2 sidenav">
+          <div class="well">
+            <p style="color:red">GET YOUR COVID-19 VACCINE NOW</p>
+          </div>
+          <div class="well">
+            <p>
+              Advertisement <br>
+              GET VACCINATED!!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+{% endblock %}
